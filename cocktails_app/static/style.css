@@ -1,0 +1,40 @@
+/*
+    :author: riccardo mei
+    :encoding: utf-8
+*/
+
+body {
+    background-image: linear-gradient(to bottom right,plum, pink);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+img.decor {
+    height: 30px;
+    width: 30px;
+}
+
+
+h1.display {
+    text-align: center;
+}
+
+.btn.btn-primary, .btn.btn-primary:hover {
+    background-color: blueviolet;
+    border: 0;
+}
+.btn.btn-primary:hover {
+    font-weight: bold;
+}
+
+table > tbody {
+    cursor: pointer;
+}
+
+table > thead {
+    cursor: alias;
+}
+
+div.modal-body > span, p {
+    font-size: 18px;
+}
