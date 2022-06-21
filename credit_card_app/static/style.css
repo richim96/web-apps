@@ -1,0 +1,75 @@
+/*
+    :author: riccardo mei
+    :encoding: utf-8
+*/
+
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        to bottom right, rgba(110,44,107,1) 11.2%, rgba(209,0,116,1) 91.1%
+    );
+}
+
+h1.h1, div.container.container-fluid{
+    margin-top: 2.5%;
+    margin-bottom: auto;
+    text-align: center;
+    font-family: 'Franklin Gothic';
+    color: white;
+}
+
+div.container.container-fluid {
+    width: 50%;
+    height: auto;
+}
+
+#cardVector {
+    height: 50px;
+    width: 50px;
+}
+
+#checkCard, #cardNumber, #checkBtn, #randCard {
+    font-size: 20px;
+    border: 2px solid black;
+    color: white;
+}
+
+#checkCard, #randCard {
+    background-color: darkslategray;
+}
+
+#cardNumber {
+    font-weight: bold;
+    color: black;
+}
+
+#checkBtn {
+    background-color: gray;
+}
+
+#randCard {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#msg {
+    padding: 4px;
+    margin: auto;
+    height: auto;
+    width: 40%;
+    font-size: 18px;
+}
+
+#cardView {
+    width: 18rem;
+    margin: auto;
+    text-align: left;
+    color: black;
+    background-color: pink;
+}
+
+.card-img-top {
+    border: 1% solid orange;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}

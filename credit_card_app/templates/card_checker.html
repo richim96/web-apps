@@ -1,0 +1,45 @@
+<!--
+:author: riccardo mei
+-->
+{%extends 'schema.html' %}
+{% block content %}
+    <div data-ng-app="cardCheker">
+        <div data-ng-controller="myCardController">
+
+            <h1 class="h1">
+                Credit Card Checker
+                <img id="cardVector" src="static/card.png" alt="credit-card-vector">
+            </h1>
+
+            <div class="container container-fluid">
+
+                <form class="my-3 input-group">
+                    <label id="checkCard" for="cardNumber" class="input-group-text">
+                        Card number
+                    </label>
+                    <input id="cardNumber" class="form-control" type="tel" inputmode="numeric"
+                        placeholder="xxxx xxxx xxxx xxxx" data-ng-model="cardNumber">
+                    <input id="checkBtn" type="button" class="btn btn-primary"
+                        value="check validity" data-ng-click="checkCard()">
+                </form>
+                <p id="msg" class="alert" data-ng-bind="message" data-ng-class="myAlert"></p>
+
+                <input id="randCard" type="button" class="btn btn-primary"
+                    value="Generate a new card" data-ng-click="generateCard()">
+                
+                <div id="cardView" class="card">
+                    <div class="card-body">
+                        <img class="card-img-top" src="static/card_image.jpg" alt="credit-card"> 
+                        <p class="card-text">
+                            N°: <span data-ng-bind="newCard"></span>
+                        </p>
+                        <p class="card-text">
+                            Type: <span data-ng-bind="newCardType"></span>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}
